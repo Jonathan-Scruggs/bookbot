@@ -26,9 +26,9 @@ def main():
     with open("./books/frankenstein.txt") as f:
         file_contents = f.read()
         word_count = count_words(file_contents)
-        # print(word_count)
+        print(word_count)
         character_counts = count_characters(file_contents)
-        # print(character_counts)
+        print(character_counts)
         character_counts = char_dict_to_sorted_list(character_counts)
         print("--- Begin report of books/frankenstein.txt ---")
         print(f"{word_count} words found in the document")
